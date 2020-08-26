@@ -192,7 +192,7 @@ body {
 		right: 0;
 		left: 0;
 		bottom: 0;
-		max-width: 320px;
+		max-width: 100%;
 		transform: translateY(-100%);
 		transition: all 500ms ease-in-out ;
 	}
@@ -217,7 +217,6 @@ body {
 		transform: translateY(30px);
 		top: 34px;
 		padding: 25px;
-		width: 100%;
 		background-color: #1d2126;
 		z-index: 100;
 	}
