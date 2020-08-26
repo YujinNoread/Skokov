@@ -166,6 +166,10 @@ body {
 	}
 }
 @media(max-width:767px){
+	.header__nav{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 	.header__title {
 		font-size: 40px;
 		line-height: 50px;
@@ -226,9 +230,10 @@ body {
 	.navigation.active-menu{
 		opacity: 1;
 		visibility: visible;
-		transform: translateY(0);
+		transform: translateY(30px);
 		top: 34px;
 		padding: 25px;
+		width: 100%;
 		background-color: #1d2126;
 	}
 	.navigation.active-menu .header__menu{
@@ -506,6 +511,23 @@ body {
 		width: 70%;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+	.worker__name {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.worker__proffesion {
+		margin-top: 5px;
+		font-size: 12px;
+		line-height: 24px;
+	}
+	.worker__status {
+		font-size: 12px;
+		line-height: 24px;
+		font-weight: normal;
+	}
+	.worker__intro {
+		padding: 5px;
 	}
 }
 /*******************************************************************************************************************************************/
@@ -1023,9 +1045,9 @@ body {
 @media(min-width:1200px){}
 @media(max-width:767px){
 	.video__content-block {
-		width: 320px;
+		width: 100%;
 		top: 50%;
-		left: 0;
-	transform: translate(0,-50%);
+		left: 50%;
+		transform: translate(-50%,-50%);
 	}
 }
