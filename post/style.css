@@ -123,7 +123,6 @@ body {
 	font-size: 20px;
 	display: flex;
 	color: white;
-	
 }
 .header__button-learn {
 	margin-left: 30px;
@@ -350,6 +349,10 @@ body {
 	background: #343434;
 	border: none;
 	outline: none;
+}
+.post__form button:hover{
+	cursor: pointer;
+	color: white;
 }
 .post__comment {
 	padding-bottom: 50px;

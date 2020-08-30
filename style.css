@@ -576,6 +576,12 @@ body {
 	border-bottom: 12.5px solid transparent;
 	border-left: 25px solid #fff;
 }
+.video__button:hover {
+	background: white;
+}
+.video__button:hover .video__play{
+	border-left: 25px solid #fe504f;
+}
 .video__title {
 	margin-top: 30px;
 	font-size: 34px;
@@ -676,6 +682,13 @@ body {
 .news__img{
 	width: 100%;
 	height: 100%;
+}
+.news__subtitle a{
+	text-decoration: none;
+	color: #fe504f;
+}
+.news__subtitle:hover a{
+	color: white;
 }
 @media(min-width:768px){
 	.news {
@@ -875,6 +888,10 @@ body {
 	display: block;
 	margin: 30px 40px 0 auto ;
 	cursor: pointer;
+}
+.contact__form button:hover{
+	background: white;
+	color: #fe504f;
 }
 @media(min-width:768px){
 	.contact {

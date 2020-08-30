@@ -313,6 +313,9 @@ body {
 	text-decoration: none;
 	color: #fe504f;
 }
+.news__subtitle:hover a{
+	color: white;
+}
 .news__subtitle::after {
 	bottom: -15px;
 }
@@ -350,6 +353,9 @@ body {
 	text-transform: uppercase;
 	background: #343434;
 	cursor: pointer;
+}
+.new__button:hover{
+	color: white;
 }
 @media(min-width:768px){
 	.news {
