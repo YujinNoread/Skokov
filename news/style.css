@@ -67,9 +67,19 @@ body {
 }
 /*******************************************************************************************************************************************/
 .header {
-	background-image: url("img/bg.jpg");
+	background-image: url("img/header__bg.jpg");
 	background-repeat: no-repeat;
-	background-size: 100% 655px;
+	background-size: 100% 100%;
+	background-position-x: left;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+.header__content{
+	background-image: url("img/body_bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 455px;
+	background-position-x: left;
 }
 .header__menu {
 	height: 165px;
@@ -118,6 +128,12 @@ body {
 	margin-left: 30px;
 }
 @media(min-width:768px){
+	.header__content{
+		background-size: 100% 255px;
+	}
+	.header__menu {
+		height: 105px;
+	}
 	.header__menu ul{
 		height: 100px;
 	}
@@ -129,6 +145,12 @@ body {
 	}
 }
 @media(min-width:992px){
+	.header__content{
+		background-size: 100% 355px;
+	}
+	.header__menu {
+		height: 135px;
+	}
 	.header__body {
 		text-align: start;
 	}
@@ -147,6 +169,12 @@ body {
 	}
 }
 @media(min-width:1200px){
+	.header__content{
+		background-size: 100% 455px;
+	}
+	.header__menu {
+		height: 165px;
+	}
 	.header__button-start {
 		padding: 21px 51px;
 	}
@@ -155,6 +183,9 @@ body {
 	}
 }
 @media(max-width:767px){
+	.header__content{
+		background-size: 100% 355px;
+	}
 	.header__nav{
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -277,6 +308,10 @@ body {
 
 .news__subtitle {
 	line-height: 26px;
+}
+.news__subtitle a{
+	text-decoration: none;
+	color: #fe504f;
 }
 .news__subtitle::after {
 	bottom: -15px;
@@ -467,6 +502,10 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.footer__linken:hover{background-image: url("img/footer/aficon1.png");}
+.footer__facebook:hover{background-image: url("img/footer/aficon2.png");}
+.footer__twitter:hover{background-image: url("img/footer/aficon3.png");}
+.footer__youtube:hover{background-image: url("img/footer/aficon4.png");}
 @media(min-width:768px){}
 @media(min-width:992px){}
 @media(min-width:1200px){}

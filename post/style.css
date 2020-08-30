@@ -68,9 +68,19 @@ body {
 /*******************************************************************************************************************************************/
 /*******************************************************************************************************************************************/
 .header {
-	background-image: url("img/bg.jpg");
+	background-image: url("img/header__bg.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
+	background-position-x: left;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+.header__content{
+	background-image: url("img/body_bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 455px;
+	background-position-x: left;
 }
 .header__menu {
 	height: 165px;
@@ -119,6 +129,12 @@ body {
 	margin-left: 30px;
 }
 @media(min-width:768px){
+	.header__menu {
+		height: 105px;
+	}
+	.header__content{
+		background-size: 100% 355px;
+	}
 	.header__menu ul{
 		height: 100px;
 	}
@@ -127,6 +143,12 @@ body {
 	}
 }
 @media(min-width:992px){
+	.header__menu {
+		height: 135px;
+	}
+	.header__content{
+		background-size: 100% 400px;
+	}
 	.header__body {
 		text-align: start;
 	}
@@ -145,6 +167,12 @@ body {
 	}
 }
 @media(min-width:1200px){
+	.header__menu {
+		height: 165px;
+	}
+	.header__content{
+		background-size: 100% 455px;
+	}
 	.header__button-start {
 		padding: 21px 51px;
 	}
@@ -153,6 +181,9 @@ body {
 	}
 }
 @media(max-width:767px){
+	.header__content{
+		background-size: 100% 155px;
+	}
 	.header__nav{
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -374,6 +405,9 @@ body {
 .user3__comment::before{background-image: url("img/comments/user3.png")}
 .user4__comment::before{background-image: url("img/comments/user4.png")}
 @media(min-width:768px){
+	.header__menu {
+		height: 105px;
+	}
 	.post__subtitle {
 		bottom: 0px;
 		background: #343434;
@@ -383,11 +417,18 @@ body {
   }
 }
 @media(min-width:992px){
+	.header__menu {
+		height: 135px;
+	}
 	.post__subtitle {
 		font-size: 24px;
 	}
 }
-@media(min-width:1200px){}
+@media(min-width:1200px){
+	.header__menu {
+		height: 165px;
+	}
+}
 @media(max-width:767px){
 	.post__subtitle {
 		font-size: 10px;
@@ -485,6 +526,10 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.footer__linken:hover{background-image: url("img/footer/aficon1.png");}
+.footer__facebook:hover{background-image: url("img/footer/aficon2.png");}
+.footer__twitter:hover{background-image: url("img/footer/aficon3.png");}
+.footer__youtube:hover{background-image: url("img/footer/aficon4.png");}
 @media(min-width:768px){}
 @media(min-width:992px){}
 @media(min-width:1200px){}
