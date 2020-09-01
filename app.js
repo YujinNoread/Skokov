@@ -44,6 +44,15 @@ mobileMenu.addEventListener("click",function(){
 	}
 })
 
+// change header color by scroll
 
-
-	
+let headerColor = document.querySelector(".header")
+function changeColorHeaderByScroll (){
+	if(window.pageYOffset > ((document.documentElement.scrollHeight/100)*0.1)){
+		headerColor.classList.add("color-black");
+	}else{
+		headerColor.classList.remove("color-black");
+	}
+}
+document.addEventListener("DOMContentLoaded", changeColorHeaderByScroll);
+window.addEventListener("scroll", changeColorHeaderByScroll);
