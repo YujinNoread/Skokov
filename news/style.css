@@ -75,6 +75,10 @@ body {
 	top: 0;
 	z-index: 1000;
 }
+.color-black{
+	background-image: none;
+	background-color: #1d2126;
+}
 .header__content{
 	background-image: url("img/body_bg.jpg");
 	background-repeat: no-repeat;
