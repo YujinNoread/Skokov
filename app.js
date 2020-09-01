@@ -56,3 +56,37 @@ function changeColorHeaderByScroll (){
 }
 document.addEventListener("DOMContentLoaded", changeColorHeaderByScroll);
 window.addEventListener("scroll", changeColorHeaderByScroll);
+
+// tabs blocks
+
+function tab () {
+	let tabNav = document.querySelectorAll('.tabs-nav__item');
+	let tabContent = document.querySelectorAll('.tab');
+	let tabName;
+
+	tabNav.forEach(item => {
+		 item.addEventListener('click', selectTabNav)
+	});
+
+	function selectTabNav() {
+		tabNav.forEach(item => {
+			item.classList.remove('is-active');
+		});
+		this.classList.add('is-active');
+		tabName = this.getAttribute('data-tab-name');
+		selectTabContent(tabName);
+	}
+
+	function selectTabContent(tabName) {
+		tabContent.forEach(item => {
+			if(item.classList.contains(tabName)){
+			item.classList.add('is-active');
+			}else{
+			item.classList.remove('is-active');
+			}
+		})
+	}
+
+};
+
+tab();
