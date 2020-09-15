@@ -90,3 +90,23 @@ function tab () {
 };
 
 tab();
+
+// modal
+
+let modal = document.querySelector(".modal");
+let closeButton = document.querySelector(".close-button");
+function openModal(){
+	modal.classList.add("show");
+	modal.classList.remove("hide");
+}
+function closeModal(){
+	modal.classList.remove("show");
+	modal.classList.add("hide");
+}
+closeButton.addEventListener("click",closeModal);
+modal.addEventListener("click", function(event){
+	if(event.target === modal){
+		closeModal();
+	}
+})
+setTimeout(openModal, 10000);
